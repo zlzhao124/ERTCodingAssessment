@@ -1,0 +1,22 @@
+DOCUMENTATION
+
+1. the makefile should have the commands necessary such that it compiles and creates the proper
+library that gets extracted from the http://irimodel.org/ website.
+
+2. We make a c program that connects to the header of the iri library we made from step 1. Then, 
+in the code, we can open any files from the irt library and extract/print their output.
+
+3. I made a txt file that has an example of a set of gnu commands that should plot the electron
+density.
+
+To be honest, I hadn't had much experience with much of the concepts applied in this exercise,
+so I had to rely on some online help to implement the functions. For instance, I had never used
+GNUplot before so I watched a few youtube videos on how it worked.
+I also don't think I fully completed this exercise, as it was just too difficult and not feasible given
+that I didn't have a lot of time these last few weeks and also wanted to try working on the other 
+exercises in the coding assessment. I also did not have a c compiler on my local machine, so I had to use 
+an online c compiler to verify my steps at each point. 
+Some lessons I learned, besides things about gnuplot and C, were that even though I didn't have much 
+experience with some of the topics, because of my background in other languages, I can easily adapt to 
+at least create something (hopefully) presentable in a short timespan. I also observed how powerful C and just 
+coding in general can be to plotting and utilizing real world datasets for research.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="input">Enter a number:</label>
+    <input type="text" id="input" name="input">
+    <button onclick="generate()">Generate Array</button>
+    <div id="output"></div>
+
+    <script>
+      function generate() {
+        // Get the input value
+        const input = document.getElementById("input").value;
+
+        // Validate the input
+        if (input.trim() === "" || isNaN(input)) {
+          alert("Error: Input must be number");
+          return;
+        }
+
+        // Generate the array
+        const startArray = [];
+        for (let i = 0; i < 10; i++) {
+          const value = parseInt(input) + i * Math.random();
+          startArray.push(value);
+        }
+
+        // Double the values in the array
+        const doubledArray = startArray.map((value) => value * 2);
+
+        // Display the arrays in a table
+        const table = document.createElement("table");
+        const headerRow = table.insertRow();
+        const originalHeader = headerRow.insertCell();
+        originalHeader.innerHTML = "Original Values";
+        const returnedHeader = headerRow.insertCell();
+        returnedHeader.innerHTML = "Returned Values";
+        for (let i = 0; i < startArray.length; i++) {
+          const row = table.insertRow();
+          const originalValue = row.insertCell();
+          originalValue.innerHTML = startArray[i];
+          const returnedValue = row.insertCell();
+          returnedValue.innerHTML = doubledArray[i];
+        }
+
+        // Display the table in the output div
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = "";
+        outputDiv.appendChild(table);
+      }
+    </script>
+  </body>
+</html>
+

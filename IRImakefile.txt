@@ -1,0 +1,13 @@
+# Makefile for compiling iri2016 library
+
+CC = gcc
+CFLAGS = -Wall -Wextra -shared -fPIC
+
+all: libiri2016.so
+
+libiri2016.so: iri2016.c
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -f libiri2016.so
+

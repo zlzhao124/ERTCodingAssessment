@@ -1,0 +1,9 @@
+set term pngcairo
+set output "edp.png"
+set title "Electron Density Profile"
+set xlabel "Electron Density (m^-3)"
+set ylabel "Altitude (km)"
+set grid
+set xrange [0:*]
+set yrange [0:1000]
+plot 'edp.dat' using 2:1 with lines
