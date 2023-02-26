@@ -13,4 +13,4 @@ Because I was able to implement a correct sorting algorithm and a correct median
 
 Assessment Javascript: file created is ```HTML_JSproblem.html```
 
-Assessment: Optimization: still in the process of thinking of a good way to code this up, but my ideas are written in ```OptimizationIdea.txt```
+Assessment: Optimization: still in the process of thinking of a good way to code this up, but my ideas are written in ```OptimizationIdea.txt```. Also, note that I also found some repositories with some code with approximation algroithms for 3D-Bin Packing, but I decided that because I only started thinking about this problem recently and won't have much time next week, I'll go with my own simpler solution.
