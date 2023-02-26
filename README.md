@@ -13,4 +13,4 @@ Because I was able to implement a correct sorting algorithm and a correct median
 
 Assessment Javascript: file created is ```HTML_JSproblem.html```
 
-Assessment: Optimization: file created is TBD
+Assessment: Optimization: still in the process of thinking of a good way to code this up, but my ideas are written in ```OptimizationIdea.txt```
