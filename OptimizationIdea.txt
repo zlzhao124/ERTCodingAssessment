@@ -1,0 +1,21 @@
+After a bit of Googling, I discovered that this is a variant of the NP-Hard 3D Bin Packing problem,
+meaning it is a hard problem to solve, and at the moment, no algorithm in polynomial time exists
+to solve it. With the time that I have, I was able to think of a greedy solution that tries to 
+maximize quantity of boxes inside the big box. I'll code the greedy solution in the upcoming days, but
+here is my idea for how the algorithm will run:
+
+1. sort the small boxes by nondecreasing volume
+2. set num_boxes = 0
+3. choose the next first in the sorted list
+4. see if any orientation will fit inside the remaining space of the big box
+5. if it fits, pick the orientation that fills up the most height (least base), insert the small box into the
+big box, and add 1 to num_boxes
+6. if it doesn't fit, go on to the next box
+7. repeat steps 4-6 until no more boxes are left in the list
+
+Essentially, the greedy algorithm will choose the smallest box, sees if it fits, and
+orients it in the way that makes it the tallest, so it should leave most of the base. I do realize 
+that there is a really easy modification to turn this into a dynamic programming algorithm, because
+we can just run a recurrence over every single way to fit the next box and take the maximum number
+of boxes returned by each subproblem result, however that will not run fast on my computer, nor will I
+have the time to code it up.
