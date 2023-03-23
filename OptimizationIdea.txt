@@ -1,8 +1,8 @@
 After a bit of Googling, I discovered that this is a variant of the NP-Hard 3D Bin Packing problem,
 meaning it is a hard problem to solve, and at the moment, no algorithm in polynomial time exists
 to solve it. With the time that I have, I was able to think of a greedy solution that tries to 
-maximize quantity of boxes inside the big box. I'll code the greedy solution in the upcoming days, but
-here is my idea for how the algorithm will run:
+maximize quantity of boxes inside the big box.
+Here is my idea for how the algorithm will run:
 
 1. sort the small boxes by nondecreasing volume
 2. set num_boxes = 0
